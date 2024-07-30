@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Apply different styles for screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Apply different styles for screens smaller than 400px */
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }

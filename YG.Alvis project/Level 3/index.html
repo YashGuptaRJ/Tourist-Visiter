@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link  href="./Level 2/styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Level 4/styles.css">
+    <style>
+        
+        .location {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .location img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1  style="color: blue; font-size: 36px; background-color: aqua;">Welcome to Gupta Heritage!</h1>
+    <p style="color: black; font-size: 20px;">The beauty of nature is an endless source of inspiration and solace. From the majestic mountains that rise like silent sentinels over the earth to the serene lakes that mirror the sky's vast expanse, nature's splendor is boundless. The vibrant colors of a sunset, painting the horizon in hues of gold, pink, and purple, evoke a sense of wonder and tranquility. In the forest, towering trees whisper ancient secrets, their leaves rustling in the gentle breeze, creating a symphony of life.</p>
+    <img src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_1280.jpg" alt="An image">
+
+    <button id="background-changer">Change Background Color</button>
+    
+    <script src="Level 2 script.js"></script>
+
+    
+    <h1>Beautiful Destinations</h1>
+    <input type="text" id="search" placeholder="Enter destination">
+    <button id="searchButton">Search</button>
+    <div id="locations"></div>
+    <script src="Level 3 script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <form id="userForm" class="border p-4 rounded">
+            <h2 class="mb-4">Registration Form</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
